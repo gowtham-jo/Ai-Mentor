@@ -641,22 +641,40 @@ const DiscussionsPage = () => {
                                     placeholder="Write a reply..."
                                     value={panelReplyInputText}
                                     onChange={(e) => setPanelReplyInputText(e.target.value)}
-                                    onKeyDown={(e) => {
+                                    onKeyDown={async (e) => {
                                       if (e.key === "Enter" && !e.shiftKey) {
                                         e.preventDefault();
-                                        handleReplySubmit(post.id, panelReplyInputText, "panel");
-                                        setPanelReplyInputText("");
-                                        setPanelReplyingTo(null);
+                                        const text = panelReplyInputText.trim();
+                                        if (!text) {
+                                          return;
+                                        }
+                                        try {
+                                          await handleReplySubmit(post.id, text, "panel");
+                                          setPanelReplyInputText("");
+                                          setPanelReplyingTo(null);
+                                        } catch (err) {
+                                          // Keep input/UI open so the user doesn't lose their text
+                                          console.error("Failed to submit reply from panel input:", err);
+                                        }
                                       }
                                     }}
                                     className="flex-1 px-3 py-1.5 bg-input border border-border rounded-lg text-xs text-main placeholder-muted focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                     autoFocus
                                   />
                                   <button
-                                    onClick={() => {
-                                      handleReplySubmit(post.id, panelReplyInputText, "panel");
-                                      setPanelReplyInputText("");
-                                      setPanelReplyingTo(null);
+                                    onClick={async () => {
+                                      const text = panelReplyInputText.trim();
+                                      if (!text) {
+                                        return;
+                                      }
+                                      try {
+                                        await handleReplySubmit(post.id, text, "panel");
+                                        setPanelReplyInputText("");
+                                        setPanelReplyingTo(null);
+                                      } catch (err) {
+                                        // Keep input/UI open so the user doesn't lose their text
+                                        console.error("Failed to submit reply from panel button:", err);
+                                      }
                                     }}
                                     className="px-3 py-1.5 bg-indigo-600 text-white text-xs font-medium rounded-lg hover:bg-indigo-700 transition-colors flex items-center gap-1"
                                   >
