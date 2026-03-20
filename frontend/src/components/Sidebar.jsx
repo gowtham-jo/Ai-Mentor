@@ -59,10 +59,10 @@ const Sidebar = ({ activePage = "dashboard" }) => {
 
   return (
     <>
-      {sidebarOpen && <div className="fixed inset-0 bg-black/60 backdrop-blur-md z-60 lg:hidden" onClick={() => setSidebarOpen(false)} />}
+      {sidebarOpen && <div className="fixed inset-0 bg-black/60 backdrop-blur-md z-[60] lg:hidden" onClick={() => setSidebarOpen(false)} />}
 
       {showLogoutConfirm && (
-        <div className="fixed inset-0 z-200 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 backdrop-blur-sm">
           <div className="bg-card border border-border/50 rounded-4xl shadow-2xl p-8 w-80 text-center">
             <LogOut className="w-10 h-10 text-red-500 mx-auto mb-4" />
             <h3 className="text-sm font-black uppercase tracking-tight text-main mb-2">Logout</h3>
@@ -75,7 +75,7 @@ const Sidebar = ({ activePage = "dashboard" }) => {
         </div>
       )}
 
-      <div className={`fixed lg:fixed top-18.5 left-0 z-70 bg-card/70 backdrop-blur-2xl border-r border-border/50 transform transition-all duration-500 ease-out lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"} ${sidebarCollapsed ? "lg:w-24" : "lg:w-80"} w-80 h-[calc(100vh-4rem)] overflow-visible`}>
+      <div className={`fixed lg:fixed top-18.5 left-0 z-[70] bg-card/70 backdrop-blur-2xl border-r border-border/50 transform transition-all duration-500 ease-out lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"} ${sidebarCollapsed ? "lg:w-24" : "lg:w-80"} w-80 h-[calc(100vh-4rem)] overflow-visible`}>
 
         <button onClick={() => setSidebarCollapsed(!sidebarCollapsed)} className="hidden lg:flex absolute -right-5 top-8 w-10 h-10 bg-card border border-border rounded-xl items-center justify-center hover:bg-teal-500 hover:text-white transition-all shadow-xl z-80">
           <ChevronRight className={`w-5 h-5 transition-transform duration-500 ${sidebarCollapsed ? "" : "rotate-180"}`} />

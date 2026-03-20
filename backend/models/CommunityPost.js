@@ -52,7 +52,7 @@ CommunityPost.init(
       defaultValue: [],
     },
     hiddenAt: {
-      type: DataTypes.STRING,
+      type: DataTypes.DATE,
       allowNull: true,
       defaultValue: null,
     },

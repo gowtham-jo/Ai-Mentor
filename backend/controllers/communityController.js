@@ -1,4 +1,4 @@
-﻿import CommunityPost from "../models/CommunityPost.js";
+import CommunityPost from "../models/CommunityPost.js";
 import User from "../models/User.js";
 import Report from "../models/Report.js";
 import crypto from "crypto";
@@ -328,7 +328,7 @@ const replyCommunityPost = async (req, res) => {
     post.changed("replies", true);
     await post.save();
 
-    // âœ… Notification Trigger (Discussion Reply)
+    // Notification Trigger (Discussion Reply)
     // Send notification to the post author (unless they are replying to their own post)
     if (post.userId !== req.user.id) {
       createNotification(post.userId, {

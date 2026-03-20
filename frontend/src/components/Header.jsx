@@ -165,8 +165,8 @@ const Header = ({ searchQuery = "", onSearchChange }) => {
 
   return (
     <>
-    <header className="bg-card/80 backdrop-blur-xl border-b border-border/50 px-6 py-4 fixed top-0 left-0 right-0 z-100">
-      <div className="flex items-center justify-between max-w-400 mx-auto">
+    <header className="bg-card/80 backdrop-blur-xl border-b border-border/50 px-6 py-4 fixed top-0 left-0 right-0 z-[100]">
+      <div className="flex items-center justify-between max-w-[400px] mx-auto">
 
         {/* Mobile Menu & Logo */}
         <div className="flex items-center space-x-4">
@@ -219,7 +219,7 @@ const Header = ({ searchQuery = "", onSearchChange }) => {
             >
               <Bell className="w-5 h-5 text-muted group-hover:rotate-12 transition-transform" />
               {unreadCount > 0 && (
-                <span className="absolute -top-1 -right-1 min-w-4.5 h-4.5 px-1 bg-orange-500 rounded-full border-2 border-card flex items-center justify-center text-[10px] font-black text-white animate-in zoom-in duration-300">
+                <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 bg-orange-500 rounded-full border-2 border-card flex items-center justify-center text-[10px] font-black text-white animate-in zoom-in duration-300">
                   {unreadCount}
                 </span>
               )}
@@ -254,7 +254,7 @@ const Header = ({ searchQuery = "", onSearchChange }) => {
                 </div>
 
                 {/* Updated max-h to show ~4 notifications before scrolling */}
-                <div className="max-h-87.5 overflow-y-auto custom-scrollbar">
+                <div className="max-h-[350px] overflow-y-auto custom-scrollbar">
                   {loading ? (
                     <div className="p-12 text-center">
                       <div className="w-8 h-8 border-4 border-teal-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
