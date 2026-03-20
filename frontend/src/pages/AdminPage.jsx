@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import { useSidebar } from "../context/SidebarContext";
-import { useEffect } from "react";
+import toast from "react-hot-toast";
 import Header from "../components/Header";
+import API_BASE_URL from "../lib/api";
 
 const AdminPage = () => {
   const { sidebarOpen, setSidebarOpen, sidebarCollapsed, setSidebarCollapsed } = useSidebar();
@@ -30,7 +31,7 @@ const AdminPage = () => {
 
   const fetchCourses = async () => {
     try {
-      const response = await fetch('/api/courses');
+      const response = await fetch(`${API_BASE_URL}/api/courses`);
       const data = await response.json();
       setCourses(data);
     } catch (error) {
@@ -51,7 +52,7 @@ const AdminPage = () => {
     e.preventDefault();
     const token = localStorage.getItem('token');
     try {
-      const response = await fetch('/api/courses', {
+      const response = await fetch(`${API_BASE_URL}/api/courses`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,25 +68,25 @@ const AdminPage = () => {
 
       await fetchCourses(); // Refresh list
       setNewCourse({ id: '', title: '', category: '', level: '', rating: 4.5, students: '0 students', lessons: '0 lessons', price: '₹0', image: '', categoryColor: 'bg-blue-100 text-blue-600' });
-      alert('Course added successfully!');
+      toast.success('Course added successfully!');
     } catch (error) {
       console.error('Error adding course:', error);
-      alert(`Error: ${error.message}`);
+      toast.error(`Error: ${error.message}`);
     }
   };
 
   const handleManageCourse = async (courseId) => {
     try {
-      const response = await fetch(`/api/courses/${courseId}`);
+      const response = await fetch(`${API_BASE_URL}/api/courses/${courseId}`);
       if (response.ok) {
         const fullCourse = await response.json();
         setSelectedCourse(fullCourse);
       } else {
-        alert('Failed to fetch course details');
+        toast.error('Failed to fetch course details');
       }
     } catch (error) {
       console.error('Error fetching course:', error);
-      alert(`Error: ${error.message}`);
+      toast.error(`Error: ${error.message}`);
     }
   };
 
@@ -104,21 +105,21 @@ const AdminPage = () => {
         throw new Error('Failed to delete course');
       }
       await fetchCourses(); // Refresh list
-      alert('Course deleted successfully!');
+      toast.success('Course deleted successfully!');
     } catch (error) {
       console.error('Error deleting course:', error);
-      alert(`Error: ${error.message}`);
+      toast.error(`Error: ${error.message}`);
     }
   };
 
   const handleUpdateVideo = async () => {
     if (!selectedLesson || !videoUrl) {
-      alert('Please select a lesson and enter a video URL');
+      toast.error('Please select a lesson and enter a video URL');
       return;
     }
     const token = localStorage.getItem('token');
     try {
-      const response = await fetch(`/api/courses/${selectedCourse.id}/lessons/${selectedLesson}/video`, {
+      const response = await fetch(`${API_BASE_URL}/api/courses/${selectedCourse.id}/lessons/${selectedLesson}/video`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -130,12 +131,12 @@ const AdminPage = () => {
       if (!response.ok) {
         throw new Error('Failed to update video URL');
       }
-      alert('Video URL updated successfully!');
+      toast.success('Video URL updated successfully!');
       setVideoUrl('');
       setSelectedLesson('');
     } catch (error) {
       console.error('Error updating video:', error);
-      alert(`Error: ${error.message}`);
+      toast.error(`Error: ${error.message}`);
     }
   };
 
@@ -152,7 +153,7 @@ const AdminPage = () => {
   const handleAddSubtopics = async () => {
     const token = localStorage.getItem('token');
     try {
-      const response = await fetch(`/api/courses/${selectedCourse.id}/subtopics`, {
+      const response = await fetch(`${API_BASE_URL}/api/courses/${selectedCourse.id}/subtopics`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -164,11 +165,11 @@ const AdminPage = () => {
       if (!response.ok) {
         throw new Error('Failed to add subtopics');
       }
-      alert('Subtopics added successfully!');
+      toast.success('Subtopics added successfully!');
       setSubtopics([{ title: '', goal: '', topics: [''], tools: [''], activities: [''], assignment: '', activity: '' }]);
     } catch (error) {
       console.error('Error adding subtopics:', error);
-      alert(`Error: ${error.message}`);
+      toast.error(`Error: ${error.message}`);
     }
   };
 
@@ -184,12 +185,12 @@ const AdminPage = () => {
 
   const handleAddLessons = async () => {
     if (!selectedModule) {
-      alert('Please select a module');
+      toast.error('Please select a module');
       return;
     }
     const token = localStorage.getItem('token');
     try {
-      const response = await fetch(`/api/courses/${selectedCourse.id}/modules/${selectedModule}/lessons`, {
+      const response = await fetch(`${API_BASE_URL}/api/courses/${selectedCourse.id}/modules/${selectedModule}/lessons`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -201,13 +202,13 @@ const AdminPage = () => {
       if (!response.ok) {
         throw new Error('Failed to add lessons');
       }
-      alert('Lessons added successfully!');
+      toast.success('Lessons added successfully!');
       setNewLessons([{ id: '', title: '', duration: '', completed: false, playing: false, type: 'video' }]);
       setSelectedModule('');
       await handleManageCourse(selectedCourse.id); // Refresh course data to include new lessons
     } catch (error) {
       console.error('Error adding lessons:', error);
-      alert(`Error: ${error.message}`);
+      toast.error(`Error: ${error.message}`);
     }
   };
 
@@ -312,7 +313,7 @@ const AdminPage = () => {
                         <button onClick={async () => {
                           const token = localStorage.getItem('token');
                           try {
-                            const response = await fetch(`/api/courses/${selectedCourse.id}/modules`, {
+                            const response = await fetch(`${API_BASE_URL}/api/courses/${selectedCourse.id}/modules`, {
                               method: 'POST',
                               headers: {
                                 'Content-Type': 'application/json',
@@ -324,12 +325,12 @@ const AdminPage = () => {
                             if (!response.ok) {
                               throw new Error('Failed to add modules');
                             }
-                            alert('Modules added successfully!');
+                            toast.success('Modules added successfully!');
                             setNewModules([{ id: '', title: '' }]);
                             await handleManageCourse(selectedCourse.id); // Refresh course data to include new modules
                           } catch (error) {
                             console.error('Error adding modules:', error);
-                            alert(`Error: ${error.message}`);
+                            toast.error(`Error: ${error.message}`);
                           }
                         }} className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 ml-2">Save Modules</button>
                       </div>

@@ -535,5 +535,1061 @@
         ]
       }
     }
+  },
+  "4": {
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Module 1: Introduction to MongoDB",
+      "lessons": [
+        {
+          "id": "what-is-mongodb",
+          "title": "What is MongoDB?",
+          "duration": "12 min",
+          "completed": false,
+          "playing": true,
+          "type": "video",
+          "youtubeUrl": "https://www.youtube.com/watch?v=-56x56UppqQ"
+        },
+        {
+          "id": "nosql-vs-sql",
+          "title": "NoSQL vs SQL",
+          "duration": "15 min",
+          "completed": false,
+          "playing": false,
+          "type": "video",
+          "youtubeUrl": "https://www.youtube.com/watch?v=Q7c7zF7W9n8"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Module 2: MongoDB Basics",
+      "lessons": [
+        {
+          "id": "install-mongodb",
+          "title": "Installing MongoDB",
+          "duration": "10 min",
+          "completed": false,
+          "playing": false,
+          "type": "video",
+          "youtubeUrl": "https://www.youtube.com/watch?v=FwMwO8pXfq0"
+        },
+        {
+          "id": "collections-documents",
+          "title": "Collections & Documents",
+          "duration": "14 min",
+          "completed": false,
+          "playing": false,
+          "type": "video",
+          "youtubeUrl": "https://www.youtube.com/watch?v=ofme2o29ngU"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Module 3: CRUD Operations",
+      "lessons": [
+        {
+          "id": "insert-data",
+          "title": "Insert Data",
+          "duration": "18 min",
+          "completed": false,
+          "playing": false,
+          "type": "video",
+          "youtubeUrl": "https://www.youtube.com/watch?v=ExcRbA7fy_A"
+        },
+        {
+          "id": "read-data",
+          "title": "Read Data",
+          "duration": "16 min",
+          "completed": false,
+          "playing": false,
+          "type": "video",
+          "youtubeUrl": "https://www.youtube.com/watch?v=2QQGWYe7IDU"
+        },
+        {
+          "id": "update-delete",
+          "title": "Update & Delete",
+          "duration": "20 min",
+          "completed": false,
+          "playing": false,
+          "type": "video",
+          "youtubeUrl": "https://www.youtube.com/watch?v=HcW5Ue7hV7E"
+        }
+      ]
+    }
+  ],
+  "course": {
+    "title": "MongoDB Basics",
+    "subtitle": "NoSQL Database for Beginners",
+    "logo": "/AI_Tutor_New_UI/Dashboard/MongoDB.png",
+    "progress": 0
+  },
+  "currentLesson": {
+    "id": "what-is-mongodb",
+    "title": "What is MongoDB?",
+    "module": "Module 1: Introduction to MongoDB",
+    "youtubeUrl": "https://www.youtube.com/watch?v=-56x56UppqQ",
+    "content": {
+      "introduction": "MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is widely used for scalable and modern web applications.",
+      "keyConcepts": [
+        {
+          "title": "NoSQL Database",
+          "description": "Stores data in flexible formats instead of tables.",
+          "borderColor": "border-[#60A5FA]",
+          "bgColor": "bg-white",
+          "textColor": "text-black"
+        },
+        {
+          "title": "Documents",
+          "description": "MongoDB stores data as JSON-like documents.",
+          "borderColor": "border-[#C084FC]",
+          "bgColor": "bg-white",
+          "textColor": "text-black"
+        },
+        {
+          "title": "Collections",
+          "description": "Groups of documents similar to tables in SQL.",
+          "borderColor": "border-[#22D3EE]",
+          "bgColor": "bg-[#1F2937]",
+          "textColor": "text-white",
+          "descriptionColor": "text-[#D1D5DB]"
+        }
+      ]
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "Module 1: Introduction to PostgreSQL",
+        "lessons": [
+          {
+            "id": "what-is-postgresql",
+            "title": "What is PostgreSQL?",
+            "duration": "12 min",
+            "completed": false,
+            "playing": true,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=qw--VYLpxG4"
+          },
+          {
+            "id": "installing-postgresql",
+            "title": "Installing PostgreSQL",
+            "duration": "10 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=xaWlS9HtWYw"
+          },
+          {
+            "id": "postgresql-architecture",
+            "title": "PostgreSQL Architecture",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2jshzBvNW9o"
+          },
+          {
+            "id": "setting-up-environment",
+            "title": "Setting Up Your Environment",
+            "duration": "9 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=T8R1_nOGTex"
+          }
+        ]
+      },
+      {
+        "id": "module-2",
+        "title": "Module 2: Basic SQL Operations",
+        "lessons": [
+          {
+            "id": "creating-databases",
+            "title": "Creating Databases",
+            "duration": "11 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HpD4Mf-QS64"
+          },
+          {
+            "id": "creating-tables",
+            "title": "Creating Tables",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Y4cLdMUvwAE"
+          },
+          {
+            "id": "insert-update-delete",
+            "title": "Insert Update Delete",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=RhAAjy_iP5w"
+          },
+          {
+            "id": "select-queries",
+            "title": "Select Queries",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=eMJk4ysfAfE"
+          },
+          {
+            "id": "filtering-sorting",
+            "title": "Filtering and Sorting Data",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=0nwcqv4vjV8"
+          }
+        ]
+      },
+      {
+        "id": "module-3",
+        "title": "Module 3: Advanced SQL Queries",
+        "lessons": [
+          {
+            "id": "joins",
+            "title": "Joins",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2vXlKNl7QAI"
+          },
+          {
+            "id": "aggregate-functions",
+            "title": "Aggregate Functions",
+            "duration": "11 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=mFhqLZ1xpnQ"
+          },
+          {
+            "id": "group-by-having",
+            "title": "Group By and Having",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_aYKvWbkqrE"
+          },
+          {
+            "id": "subqueries",
+            "title": "Subqueries and Nested Queries",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=8C4i--d5z3s"
+          }
+        ]
+      },
+      {
+        "id": "module-4",
+        "title": "Module 4: Indexes and Performance",
+        "lessons": [
+          {
+            "id": "indexes",
+            "title": "Indexes",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=fsG1XaZEUhQ"
+          },
+          {
+            "id": "query-optimization",
+            "title": "Query Optimization",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=P5NKmlQQ7tE"
+          },
+          {
+            "id": "explain-analyze",
+            "title": "EXPLAIN and ANALYZE",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=WF5-LKdB-Jo"
+          },
+          {
+            "id": "performance-tuning",
+            "title": "Performance Tuning",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=ghTaVCWXgfI"
+          }
+        ]
+      },
+      {
+        "id": "module-5",
+        "title": "Module 5: Views and Functions",
+        "lessons": [
+          {
+            "id": "views-and-functions",
+            "title": "Views and Virtual Tables",
+            "duration": "18 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=AGMnArz6HhY"
+          },
+          {
+            "id": "stored-procedures",
+            "title": "Stored Procedures",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m9Gh0TUedjI"
+          },
+          {
+            "id": "triggers",
+            "title": "Triggers",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=bNPWpHKTJVE"
+          },
+          {
+            "id": "user-defined-functions",
+            "title": "User Defined Functions",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3FZWQNIBHpw"
+          }
+        ]
+      },
+      {
+        "id": "module-6",
+        "title": "Module 6: Transactions and Data Integrity",
+        "lessons": [
+          {
+            "id": "transactions",
+            "title": "Transactions and ACID",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=V4r7TuLfmPg"
+          },
+          {
+            "id": "constraints",
+            "title": "Database Constraints",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=zJX6YHlzpTE"
+          },
+          {
+            "id": "foreign-keys",
+            "title": "Foreign Keys and Relationships",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=lVLhBMPSqAY"
+          },
+          {
+            "id": "data-validation",
+            "title": "Data Validation and Integrity",
+            "duration": "11 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=FPsQmNsz2Oc"
+          }
+        ]
+      },
+      {
+        "id": "module-7",
+        "title": "Module 7: Security and Access Control",
+        "lessons": [
+          {
+            "id": "user-roles",
+            "title": "Users and Roles",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=0xQSzL5zUTw"
+          },
+          {
+            "id": "permissions",
+            "title": "Permissions and Privileges",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=F_rYYpXYECk"
+          },
+          {
+            "id": "encryption",
+            "title": "Encryption and SSL",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=PREB_Y5f9vg"
+          },
+          {
+            "id": "authentication",
+            "title": "Authentication Methods",
+            "duration": "11 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=GEfZI6R6WtY"
+          }
+        ]
+      },
+      {
+        "id": "module-8",
+        "title": "Module 8: Backup and Recovery",
+        "lessons": [
+          {
+            "id": "backup-strategies",
+            "title": "Backup Strategies",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=YhkBRx6J7HQ"
+          },
+          {
+            "id": "full-backup",
+            "title": "Full Database Backup",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=-_qRz2a7kUA"
+          },
+          {
+            "id": "incremental-backup",
+            "title": "Incremental Backup",
+            "duration": "11 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=DKBMVvVqbD8"
+          },
+          {
+            "id": "restore-recovery",
+            "title": "Restore and Recovery",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=qXeO-1CXRME"
+          }
+        ]
+      },
+      {
+        "id": "module-9",
+        "title": "Module 9: Replication and High Availability",
+        "lessons": [
+          {
+            "id": "replication-basics",
+            "title": "Replication Basics",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_TYO1yPxHXo"
+          },
+          {
+            "id": "streaming-replication",
+            "title": "Streaming Replication",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=zzCqhkRy4W4"
+          },
+          {
+            "id": "failover",
+            "title": "Failover and Recovery",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=NP4ZXPvIrLI"
+          }
+        ]
+      },
+      {
+        "id": "module-10",
+        "title": "Module 10: Real World Applications",
+        "lessons": [
+          {
+            "id": "web-app-integration",
+            "title": "Web Application Integration",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=WYDPj2T9scA"
+          },
+          {
+            "id": "data-migration",
+            "title": "Data Migration Strategies",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=phNo84UqKPw"
+          },
+          {
+            "id": "json-support",
+            "title": "JSON Support in PostgreSQL",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=GhM8cksMxlc"
+          },
+          {
+            "id": "best-practices",
+            "title": "PostgreSQL Best Practices",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "youtubeUrl": "https://www.youtube.com/watch?v=oeIzKqLWruw"
+          }
+        ]
+      }
+    ],
+    "course": {
+      "title": "PostgreSQL",
+      "subtitle": "Learn PostgreSQL Database Fundamentals and SQL Operations",
+      "logo": "AI_Tutor_New_UI/Dashboard/full_stack_web_dev.png",
+      "progress": 0
+    },
+    "currentLesson": {
+      "id": "what-is-postgresql",
+      "title": "What is PostgreSQL?",
+      "module": "Module 1: Introduction to PostgreSQL",
+      "youtubeUrl": "",
+      "content": {
+        "introduction": "PostgreSQL is a powerful, open-source relational database system known for its reliability, robustness, and rich feature set. Learn the fundamentals of PostgreSQL database management and SQL operations.",
+        "keyConcepts": [
+          {
+            "title": "Relational Database",
+            "description": "Organize data in tables with relationships and structured queries.",
+            "borderColor": "border-[#3B82F6]",
+            "bgColor": "bg-white",
+            "textColor": "text-black"
+          },
+          {
+            "title": "SQL Operations",
+            "description": "Master Create, Read, Update, and Delete operations on databases.",
+            "borderColor": "border-[#60A5FA]",
+            "bgColor": "bg-white",
+            "textColor": "text-black"
+          },
+          {
+            "title": "Data Integrity",
+            "description": "Ensure data consistency and reliability with advanced PostgreSQL features.",
+            "borderColor": "border-[#1E40AF]",
+            "bgColor": "bg-white",
+            "textColor": "text-black"
+          }
+        ]
+      }
+    }
+  },
+  "5": {
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "Module 1: Introduction to Data Science",
+        "lessons": [
+          {
+            "id": "ds-what-is-data-science",
+            "title": "What is Data Science?",
+            "duration": "12 min",
+            "completed": false,
+            "playing": true,
+            "type": "video",
+            "topic": "Define data science, its interdisciplinary nature, and why it is foundational for AI-driven decision making.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-applications-of-data-science",
+            "title": "Applications of Data Science",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Explore practical applications of data science in healthcare, finance, e-commerce, and recommendation systems.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-data-science-lifecycle",
+            "title": "Data Science Lifecycle",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Explain the end-to-end data science lifecycle from problem framing to deployment and monitoring.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-2",
+        "title": "Module 2: Python Basics for Data Science",
+        "lessons": [
+          {
+            "id": "ds-python-overview",
+            "title": "Python for Data Science Overview",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Understand why Python is preferred for data science and review its ecosystem for analysis workflows.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-python-variables-data-types-operators",
+            "title": "Variables, Data Types, and Operators",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Learn Python variables, core data types, and operators used in data processing scripts.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-python-numpy-pandas-libraries",
+            "title": "Working with Libraries (NumPy, Pandas)",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Use NumPy and Pandas fundamentals for efficient numerical computation and tabular data handling.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-3",
+        "title": "Module 3: Data Handling with Pandas",
+        "lessons": [
+          {
+            "id": "ds-pandas-introduction",
+            "title": "Introduction to Pandas",
+            "duration": "11 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Introduce Pandas data structures and core capabilities for reading, transforming, and summarizing datasets.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-pandas-dataframes-series",
+            "title": "DataFrames and Series",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Work with DataFrames and Series to perform filtering, indexing, grouping, and aggregation.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-pandas-data-cleaning-techniques",
+            "title": "Data Cleaning Techniques",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Apply practical Pandas-based data cleaning methods for duplicates, outliers, and inconsistent records.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-4",
+        "title": "Module 4: Data Visualization Basics",
+        "lessons": [
+          {
+            "id": "ds-visualization-introduction",
+            "title": "Introduction to Data Visualization",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Cover visualization principles to communicate trends, comparisons, and distributions effectively.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-visualization-matplotlib-seaborn",
+            "title": "Using Matplotlib and Seaborn",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Build visualizations with Matplotlib and Seaborn for exploratory analysis and reporting.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-visualization-graphs-charts",
+            "title": "Creating Graphs and Charts",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Create bar, line, scatter, and distribution charts while selecting the right graph for each use case.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-5",
+        "title": "Module 5: Statistics & Probability",
+        "lessons": [
+          {
+            "id": "ds-statistics-descriptive",
+            "title": "Descriptive Statistics",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Learn descriptive statistics metrics such as mean, median, mode, variance, and standard deviation.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-statistics-probability-basics",
+            "title": "Probability Basics",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Understand foundational probability concepts including events, conditional probability, and Bayes intuition.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-statistics-data-distributions",
+            "title": "Data Distributions",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Explain normal and non-normal distributions and how distribution shape affects analysis decisions.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-6",
+        "title": "Module 6: Exploratory Data Analysis (EDA)",
+        "lessons": [
+          {
+            "id": "ds-eda-understanding-data",
+            "title": "Understanding Data",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Perform initial EDA to inspect schema, data quality, cardinality, and summary signals.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-eda-data-cleaning",
+            "title": "Data Cleaning",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Use EDA insights to clean missing values, outliers, and formatting issues before modeling.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-eda-visualization-for-insights",
+            "title": "Visualization for Insights",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Create EDA visualizations that surface actionable insights and data relationships.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-7",
+        "title": "Module 7: Feature Engineering",
+        "lessons": [
+          {
+            "id": "ds-feature-selection",
+            "title": "Feature Selection",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Select relevant predictive features using filter, wrapper, and embedded selection approaches.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-feature-transformation",
+            "title": "Feature Transformation",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Transform raw variables with encoding, scaling, and normalization techniques for model readiness.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-feature-handling-missing-values",
+            "title": "Handling Missing Values",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Apply imputation and missingness strategies to reduce bias and preserve predictive signal.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-8",
+        "title": "Module 8: Machine Learning Basics",
+        "lessons": [
+          {
+            "id": "ds-ml-introduction",
+            "title": "Introduction to Machine Learning",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Introduce supervised and unsupervised learning workflows, model training, and evaluation basics.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-ml-regression-models",
+            "title": "Regression Models",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Build and evaluate regression models to predict continuous outcomes on structured datasets.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-ml-classification-models",
+            "title": "Classification Models",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Train and compare classification algorithms for categorical prediction tasks and decision boundaries.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-9",
+        "title": "Module 9: Deep Learning Fundamentals",
+        "lessons": [
+          {
+            "id": "ds-dl-introduction",
+            "title": "Introduction to Deep Learning",
+            "duration": "13 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Explain how deep learning extends machine learning with multi-layer neural network architectures.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-dl-neural-network-basics",
+            "title": "Neural Network Basics",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Understand neurons, layers, forward propagation, and loss computation in basic neural networks.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-dl-activation-functions",
+            "title": "Activation Functions",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Compare activation functions such as ReLU, sigmoid, and tanh for nonlinear learning behavior.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-10",
+        "title": "Module 10: Neural Networks",
+        "lessons": [
+          {
+            "id": "ds-nn-training-neural-networks",
+            "title": "Training Neural Networks",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Train neural networks with epochs, batches, validation, and practical training diagnostics.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-nn-backpropagation",
+            "title": "Backpropagation",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Describe backpropagation mechanics and gradient updates that drive neural network learning.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-nn-optimization-techniques",
+            "title": "Optimization Techniques",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Apply optimization methods like SGD, momentum, and Adam for stable model convergence.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-11",
+        "title": "Module 11: Natural Language Processing (NLP)",
+        "lessons": [
+          {
+            "id": "ds-nlp-introduction",
+            "title": "Introduction to NLP",
+            "duration": "12 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Introduce NLP tasks, language representation, and common real-world text processing scenarios.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-nlp-text-processing",
+            "title": "Text Processing",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Perform tokenization, stopword removal, stemming, and vectorization for NLP pipelines.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-nlp-sentiment-analysis",
+            "title": "Sentiment Analysis",
+            "duration": "15 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Build a sentiment analysis workflow that classifies opinion polarity in text corpora.",
+            "course": "Data Science"
+          }
+        ]
+      },
+      {
+        "id": "module-12",
+        "title": "Module 12: Real-world Data Science Projects",
+        "lessons": [
+          {
+            "id": "ds-project-building-a-data-science-project",
+            "title": "Building a Data Science Project",
+            "duration": "16 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Plan and execute a complete data science project from business problem to validated results.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-project-end-to-end-ml-pipeline",
+            "title": "End-to-End ML Pipeline",
+            "duration": "17 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Design an end-to-end ML pipeline including ingestion, training, evaluation, and inference stages.",
+            "course": "Data Science"
+          },
+          {
+            "id": "ds-project-deployment-basics",
+            "title": "Deployment Basics",
+            "duration": "14 min",
+            "completed": false,
+            "playing": false,
+            "type": "video",
+            "topic": "Cover model deployment basics, serving options, monitoring, and iterative improvement in production.",
+            "course": "Data Science"
+          }
+        ]
+      }
+    ],
+    "course": {
+      "title": "Data Science",
+      "subtitle": "Complete Data Science Path from Foundations to Deployment",
+      "logo": "AI_Tutor_New_UI/Dashboard/data_analytics.png",
+      "progress": 0
+    },
+    "currentLesson": {
+      "id": "ds-what-is-data-science",
+      "title": "What is Data Science?",
+      "module": "Module 1: Introduction to Data Science",
+      "youtubeUrl": "",
+      "content": {
+        "introduction": "Data Science combines statistics, programming, and domain knowledge to extract insights and build intelligent solutions. This course teaches a full path from Python and Pandas to machine learning, deep learning, NLP, and deployment fundamentals.",
+        "keyConcepts": [
+          {
+            "title": "Data Foundations",
+            "description": "Understand data collection, cleaning, exploration, and feature preparation workflows.",
+            "borderColor": "border-[#3B82F6]",
+            "bgColor": "bg-white",
+            "textColor": "text-black"
+          },
+          {
+            "title": "Model Building",
+            "description": "Train and evaluate machine learning and deep learning models for prediction tasks.",
+            "borderColor": "border-[#60A5FA]",
+            "bgColor": "bg-white",
+            "textColor": "text-black"
+          },
+          {
+            "title": "Production Thinking",
+            "description": "Deploy, monitor, and improve models to deliver long-term real-world impact.",
+            "borderColor": "border-[#1E40AF]",
+            "bgColor": "bg-white",
+            "textColor": "text-black"
+          }
+        ]
+      }
+    }
   }
 }
